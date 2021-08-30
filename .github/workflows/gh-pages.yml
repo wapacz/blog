@@ -30,7 +30,7 @@ jobs:
             
             
       - run: |
-          sed -i '5i\ "homepage": "/pages-demo-react",' ./package.json
+          sed -i '5i\ "homepage": "/blog",' ./package.json
       - run: npm ci
       - run: npm run build
       - run: cp build/index.html build/404.html
